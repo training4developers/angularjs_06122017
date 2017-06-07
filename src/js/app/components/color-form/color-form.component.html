@@ -1,0 +1,9 @@
+<form>
+    <div>
+        <label for="color-input">Color</label>
+        <input type="text" id="color-input" ng-model="$ctrl.color">
+    </div>
+    <button type="button" ng-click="$ctrl.submitColor({ color: $ctrl.color })">
+        Submit Color
+    </button>
+</form>
