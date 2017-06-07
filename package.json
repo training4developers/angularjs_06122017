@@ -1,7 +1,7 @@
 {
   "name": "angular_06122017",
   "version": "1.0.0",
-  "description": "Angular + Redux class files",
+  "description": "Angular class files",
   "scripts": {
     "start": "concurrently \"npm run web\" \"npm run rest\"",
     "test": "karma start ./karma.conf.js",
