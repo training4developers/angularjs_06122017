@@ -15,6 +15,18 @@
     {
       "name": "purple",
       "id": 4
+    },
+    {
+      "name": "orange",
+      "id": 5
+    },
+    {
+      "name": "black",
+      "id": 6
+    },
+    {
+      "name": "white",
+      "id": 7
     }
   ],
   "cars": [

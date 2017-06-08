@@ -4,32 +4,28 @@ AppComponent.$inject= [ 'Colors' ];
 
 function AppComponent(colorsSvc) {
 
-    this.colorsSvc = colorsSvc;
-
     var vm = this;
 
+    vm.colorsSvc = colorsSvc;
 
     vm.headerText = 'Color Tool';
 
-    // vm.lastColors = null;
-    //vm.colors = [ 'black', 'white', 'red', 'green', 'saffron', 'blue' ];
+    function refreshColors() {
+        vm.colorsSvc.all().then(function (results) {
+            vm.colors = results.data.map(function (color) { return color.name; });
+        });
+    }
 
-    vm.addColor = function(newColor) {
-        vm.colors = vm.colors.concat(newColor);    
+    vm.addColor = function (newColor) {
+
+        return vm.colorsSvc.insert({
+            name: newColor
+        }).then(function() {
+            return refreshColors();
+        });
     };
 
-    this.colorsSvc.all().then(function(results) {
-        vm.colors = results.data.map(function(color) { return color.name; });
-    });
-
-    // vm.sortedColors = function() {
-    //     if (vm.colors !== vm.lastColors) {
-    //         vm.colors.sort();
-    //         vm.lastColors = vm.colors;
-    //     }
-    //     return vm.colors;
-    // };
-
+    refreshColors();
 }
 
 export var appComponent = [ 'main', {
