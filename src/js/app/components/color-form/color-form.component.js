@@ -1,6 +1,4 @@
-import { componentHelper } from '../../utils/component';
-
-export var colorFormComponent = [ 'colorForm', componentHelper({
+export var colorFormComponent = [ 'colorForm', {
     template: require('./color-form.component.html'),
     bindings: {
         onSubmitColor: '&',
@@ -15,4 +13,4 @@ export var colorFormComponent = [ 'colorForm', componentHelper({
             });
         };
     }
-}) ];
+}];

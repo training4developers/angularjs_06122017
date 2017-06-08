@@ -1,8 +1,6 @@
-import { componentHelper } from '../../utils/component';
-
-export var unorderedListComponent = [ 'unorderedList', componentHelper({
+export var unorderedListComponent = [ 'unorderedList', {
     template: require('./unordered-list.component.html'),
     bindings: {
         items: '=',
     },
-}) ];
+}];

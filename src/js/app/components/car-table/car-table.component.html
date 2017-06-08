@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>Make</th>        
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="car in $ctrl.cars">
+            <td>{{car.make}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.color}}</td>
+            <td>{{car.price}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<ul>
+    <li ng-repeat="item in $ctrl.items">{{item}}</li>
+</ul>

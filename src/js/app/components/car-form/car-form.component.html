@@ -1,0 +1,25 @@
+<form>
+    <div>
+        <label for="make-input">Make</label>
+        <input type="text" id="make-input" ng-model="$ctrl.car.make">
+    </div>
+    <div>
+        <label for="model-input">Model</label>
+        <input type="text" id="model-input" ng-model="$ctrl.car.model">
+    </div>
+    <div>
+        <label for="year-input">Year</label>
+        <input type="text" id="year-input" ng-model="$ctrl.car.year">
+    </div>
+    <div>
+        <label for="color-input">Color</label>
+        <input type="text" id="color-input" ng-model="$ctrl.car.color">
+    </div>
+    <div>
+        <label for="price-input">Price</label>
+        <input type="text" id="price-input" ng-model="$ctrl.car.price">
+    </div>
+    <button type="button" ng-click="$ctrl.submitCar({ car: $ctrl.car })">
+        Submit Car
+    </button>
+</form>
