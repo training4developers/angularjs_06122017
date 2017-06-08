@@ -1,6 +1,6 @@
 export var unorderedListComponent = [ 'unorderedList', {
-    template: require('./unordered-list.component.html'),
+    templateUrl: 'app/components/unordered-list/unordered-list.component.html',
     bindings: {
         items: '=',
     },
-}];
+} ];

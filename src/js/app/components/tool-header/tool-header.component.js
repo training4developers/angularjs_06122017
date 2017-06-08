@@ -1,5 +1,4 @@
 export var toolHeaderComponent = [ 'toolHeader', {
     transclude: true,
-    template: require('./tool-header.component.html'),
-    controller: function() { }
-}];
+    templateUrl: 'app/components/tool-header/tool-header.component.html'
+} ];

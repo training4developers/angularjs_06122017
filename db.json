@@ -60,6 +60,14 @@
       "year": 2015,
       "color": "yellow",
       "id": 4
+    },
+    {
+      "make": "a",
+      "model": "a",
+      "year": 1900,
+      "color": "a",
+      "price": 0,
+      "id": 5
     }
   ],
   "owners": [

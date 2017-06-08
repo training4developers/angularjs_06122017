@@ -1,6 +1,6 @@
-export var carTableComponent = ['carTableComponent', {
-    template: require('./car-table.component.html'),
+export var carTableComponent = ['carTable', {
+    templateUrl: 'app/components/car-table/car-table.component.html',
     bindings: {
         cars: '=',
-    },
-}];
+    }
+} ];
