@@ -84,7 +84,10 @@ module.exports = config => {
 
 
         // assign the configured browsers from custom launchers
-        browsers: [ 'Local_Phantom' ],
+        browsers: [
+            // 'Chrome', // npm install karma-chrome-launcher --save-dev
+            'Local_Phantom',
+        ],
 
 
         // configuration for PhantomJS browser
